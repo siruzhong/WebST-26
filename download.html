@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Learning Curve of Taxi Drivers</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.css" rel="stylesheet">
+ <style>
+.avatar {
+  vertical-align: middle;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <img src="img/WPI_Inst_Prim_FulClr.png" width = '100' hspace="5">
+      <br>
+        <br>
+        <br>
+      <img border="10" src="img/UI_gold.png" width = '60' hspace="5">
+      <img border="10" src="img/wm.png" width = '80' hspace="5">
+      <img src="img/ncstate_logo.png" width = '100' hspace="5">
+      <img src="img/gu.png" width = '80' hspace="5">
+      <img src="img/lenovo.png" width = '80' hspace="5">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#framework1">Framework</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="organizer.html">Team</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="download.html">Download</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="result.html">Results</a>
+          </li>
+<!--           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="keynotes.html">Keynotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="pass.html">Past Workshops</a>
+          </li> -->
+         <!--  <li class="nav-item">
+            <a class="nav-link1" >667</a>
+            <a class="menulink" href="program.html">Program Schedule</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead1">
+    <div class="container d-flex h-100 align-items-center">
+      <div class=" text-center">
+        <br>
+        <br>
+        <!-- <h1 class="mx-auto my-0">Meet the Team </h1> -->
+        <!-- <h2 class="text-white-50 mx-auto mt-2 mb-3">Paper Accepted</h2> -->
+        <!-- <h2 class="text-white-50 mx-auto mt-2 mb-5">Held in conjunction with the 25th ACM SIGKDD 2019</h2> -->
+        <!-- <a href="#about" class="btn btn-primary js-scroll-trigger">More</a> -->
+      </div>
+    </div>
+  </header>
+
+  <section id="organizers" class="signup-section bg-light">
+    <div class="container ">
+      <h1 class="text-black mb-4">Data and Code Release</h1>
+      <p class="text-black" mb-0>This release contains the datasets and the codes for the preference recovering and analysis introduced in the SDM19 paper:  <a href="./DLC/152.pdf" download="DLCTD.pdf"> <b><i>Dissecting the Learning Curve of Taxi Drivers: A Data-Driven Approach</i></b></a>. Two datasets are included: the MDP(sratial-temporal region based) trajectory data and the feature data, and the codes for inverse preference learning and the preference dynamics analysis will also be included. <b>Reusing the sources released in this website, please cite our publication.</b></p>
+       <br></br>
+      <h2 class="text-black mb-4">Description of Datasets</h2>
+      <p class="text-black" mb-0>Two datasets are released here: 1) MDP trajectory data, and 2) feature data.</p>
+      <h3 class="text-black mb-4">MDP trajectory data</h3>
+      <p class="text-black" mb-0>The MDP trajectory data contains the trajectory of 200 self-improving drivers and 200 stabilized drivers in July and December. The data is stored in 4 python pickle files, i.e.,
+      <br><a href="./DLC/trajectories_selfimproving_drivers_07.pkl" download="trajectories_selfimproving_drivers_07.pkl"> 
+        <i>trajectories_selfimproving_drivers_07.pkl</i></a>,
+      <br><a href="./DLC/trajectories_selfimproving_drivers_12.pkl" download="trajectories_selfimproving_drivers_12.pkl"> 
+        <i>trajectories_selfimproving_drivers_12.pkl</i></a>,
+      <br><a href="./DLC/trajectories_stabilized_drivers_07.pkl" download="trajectories_stabilized_drivers_07.pkl"> 
+        <i>trajectories_stabilized_drivers_07.pkl</i></a>,
+      <br><a href="./DLC/trajectories_stabilized_drivers_12.pkl" download="trajectories_stabilized_drivers_12.pkl"> 
+        <i>trajectories_stabilized_drivers_12.pkl</i></a>,
+
+<!--       <br>''trajectories_selfimproving_drivers_12.pkl'',
+      <br>''trajectories_stabilized_drivers_07.pkl'', and
+      <br>''trajectories_stabilized_drivers_12.pkl''. -->
+      <br>
+      <br>Taking ''trajectories_selfimproving_drivers_07.pkl'' as an example, after loading the pickle file in Python program, let’s name it <i>trajs_si</i> in python, it is a list data in python. The length of the list is the number of drivers, i.e., 200. Each element of the list is also a list, let’s name it <i>trajs</i>, which is corresponding to the trajectories of a driver in a month. Each trajectory is represented by a list <i>traj</i> in the list <i>trajs</i>. The <i>traj</i> list contains a list of steps, and the i-th step is represented by:
+      <br><center><i>[grid_index_x_i, grid_index_y_i, time_i],</i></center>
+      <br>where <i>grid_index_x_i</i> is the horizontal (west-east) index of the grid in step <i>i</i>, and the <i>grid_index_y_i</i> is the vertical (south-north) index of the grid in step <i>i</i>, and <i>time_i</i> is the index of the time slot of step <i>i</i>.</p>
+
+
+      <h3 class="text-black mb-4">Feature data</h3>
+      <p class="text-black" mb-0>The feature data contains the profile features for each driver and the habit features for all drivers. Each of the features is corresponding to a grid and time slot. And in the IRL program, the features will be encoded to each trajectory based on the steps in the trajectory.
+      <br>
+      <br>The profile features are stored in a python pickle file, <a href="./DLC/profile_features.pkl" download="profile_features.pkl"> <i>profile_features.pkl</i></a>, which is a dictionary <i>features_drivers</i> after loading in python program, and the keys of the dictionary are the driver ID's (to protect the privacy of the drivers, we rename the drivers as "driver_0", "driver_1", etc.) The values of the dictionary are also dictionaries (<i>features</i>), the keys of dictionary <i>features</i> are the grid and time slot index, and each value of <i>features</i> is a list feature values. For profile features, the list of feature values are:
+      <br><center><i>[visit_freq, dist_home, time_from_start, time_to_end].</i></center>
+      <br>The habit features, <a href="./DLC/habit_features.pkl" download="habit_features.pkl"> <i>habit_features.pkl</i></a>, are just a dictionary of features let's call it <i>features</i> here, the keys of dictionary <i>features</i> are the grid and time slot index, and each value of <i>features</i> is a list feature values. And the list of feature values for habit features are:
+      <br>
+      <br><center><i>[num_pickups, mean_trip_dist, mean_trip_time, traffic_condition, dist_to_train, dist_to_airport].</i></center></p>
+      <br></br>
+      <h2 class="text-black mb-4">Description of Codes</h2>
+      <p class="text-black" mb-0>In this release, we publish two programs for the paper, 1) inverse preference learning, and 2) preference dynamics analysis. The codes are written in Python and the libraries used are: scipy, sklearn, numpy, pandas, and itertools.</p>
+      <h3 class="text-black mb-4">Codes for inverse preference learning</h3>
+      <p class="text-black" mb-0>The program is named as ''<a href="./DLC/inverse_preference_learning.py" download="inverse_preference_learning.py"> <i>inverse_preference_learning.py</i></a>'', which takes the trajectories of a group of drivers in a month and the features as input, the preference of each driver in the input month will be output after running the program.</p>
+      <h3 class="text-black mb-4">Codes for preference dynamics analysis</h3>
+      <p class="text-black" mb-0>After learning the preference of each driver for each group in each month, the preference dynamic analysis program, named as ''<a href="./DLC/preference_dynamics_analysis.py" download="preference_dynamics_analysis.py"> <i>preference_dynamics_analysis.py</i></a>'', will take the preferences in two months as input, and output the t-values for each dimension of preference.</p>
+
+    <div class="row">
+    
+  </div>
+  <br>
+<!-- <h2 class="text-black mb-4">Program Committee</h2> -->
+    <!-- <div class="row">
+    <table align="center"  cellspacing="50" col width="930">
+      <tr>
+      <td colspan="2", align="center">
+        <figcaption><strong>TBD</strong></a><br>TBD</figcaption></td>
+      <td colspan="2", align="center"><img src="img/jieping.jpg" alt="Avatar" class="avatar">
+        <figcaption><a href="https://midas.umich.edu/faculty-member/jieping-ye/"><strong>Jieping Ye</strong></a><br>DiDi Chuxing</figcaption></td>
+      <td colspan="2", align="center"><img src="img/yanhua.jpg" alt="Avatar" class="avatar">
+        <figcaption><a href="https://users.wpi.edu/~yli15/"><strong>Yanhua Li</strong></a><br>Worcester Polytechnic Institute</figcaption></td>
+      <td colspan="2", align="center"><img src="img/bao.png" alt="Avatar" class="avatar">
+        <figcaption><a href="https://scholar.google.com/citations?user=r0rRxncAAAAJ&hl=zh-CN"><strong>Jie Bao</strong></a><br>JD Digits</figcaption></td>
+      </tr>
+    </table>
+    </div> -->
+
+  <br>
+</section>
+
+  
+  <!-- Footer -->
+  <footer class="bg-light small text-center text-black-50">
+    <div class="container">
+      Copyright &copy; Authors of the Paper
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
