@@ -47,6 +47,11 @@ function clean() {
   return del(["./vendor/"]);
 }
 
+// Clean dist
+function cleanDist() {
+  return del(["./dist/"]);
+}
+
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
   // Bootstrap
@@ -115,6 +120,35 @@ function js() {
     .pipe(browsersync.stream());
 }
 
+// Copy files to dist
+function copyToDist() {
+  // Copy HTML files (excluding .del files)
+  var html = gulp.src(["./*.html", "!./*.del"])
+    .pipe(gulp.dest("./dist"));
+  
+  // Copy images
+  var images = gulp.src("./img/**/*")
+    .pipe(gulp.dest("./dist/img"));
+  
+  // Copy accept directory
+  var accept = gulp.src("./accept/**/*")
+    .pipe(gulp.dest("./dist/accept"));
+  
+  // Copy CSS
+  var cssFiles = gulp.src("./css/**/*")
+    .pipe(gulp.dest("./dist/css"));
+  
+  // Copy JS
+  var jsFiles = gulp.src("./js/**/*")
+    .pipe(gulp.dest("./dist/js"));
+  
+  // Copy vendor
+  var vendorFiles = gulp.src("./vendor/**/*")
+    .pipe(gulp.dest("./dist/vendor"));
+  
+  return merge(html, images, accept, cssFiles, jsFiles, vendorFiles);
+}
+
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
@@ -124,7 +158,7 @@ function watchFiles() {
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
-const build = gulp.series(vendor, gulp.parallel(css, js));
+const build = gulp.series(cleanDist, vendor, gulp.parallel(css, js), copyToDist);
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
 
 // Export tasks
